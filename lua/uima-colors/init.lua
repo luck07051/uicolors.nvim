@@ -1,5 +1,3 @@
-local theme = require 'uima-colors.theme'
-
 local M = {}
 
 M.load = function()
@@ -13,7 +11,7 @@ M.load = function()
   vim.o.termguicolors = true
   vim.o.background = 'dark'
 
-  for name, val in pairs(theme) do
+  for name, val in pairs( require 'uima-colors.theme' ) do
     vim.api.nvim_set_hl(0, name, val)
   end
 

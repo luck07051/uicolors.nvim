@@ -1,35 +1,29 @@
 local util = require 'uima-colors.util'
+local color = require 'uima-colors.color'
 
-local c = {
-  black   = '#121212',
-  red     = '#E67E80',
-  green   = '#87AF87',
-  yellow  = '#EBCB8B',
-  blue    = '#81A1C1',
-  magenta = '#ECB2CF',
-  cyan    = '#87AFAF',
-  white   = '#D0D0D0',
-}
+color['bg'] = color.black
+color['fg'] = color.white
 
-return {
-  black   = c.black,
-  red     = c.red,
-  green   = c.green,
-  yellow  = c.yellow,
-  blue    = c.blue,
-  magenta = c.magenta,
-  cyan    = c.cyan,
-  white   = c.white,
+color['gray0'] = util.blend(color.fg, color.bg, 0.05)
+color['gray1'] = util.blend(color.fg, color.bg, 0.1)
+color['gray2'] = util.blend(color.fg, color.bg, 0.2)
+color['gray3'] = util.blend(color.fg, color.bg, 0.3)
+color['gray4'] = util.blend(color.fg, color.bg, 0.4)
+color['gray5'] = util.blend(color.fg, color.bg, 0.5)
+color['gray6'] = util.blend(color.fg, color.bg, 0.6)
+color['gray7'] = util.blend(color.fg, color.bg, 0.7)
+color['gray8'] = util.blend(color.fg, color.bg, 0.8)
+color['gray9'] = util.blend(color.fg, color.bg, 0.9)
 
-  bg = c.black,
-  fg = c.white,
+-- UI --
+color['cursor_line'] = color.gray1
+color['nontext'] = color.gray4
+color['float_bg'] = color.gray0
 
-  gray1 = util.blend(c.white, c.black, 0.11),
-  gray2 = util.blend(c.white, c.black, 0.22),
-  gray3 = util.blend(c.white, c.black, 0.33),
-  gray4 = util.blend(c.white, c.black, 0.44),
-  gray5 = util.blend(c.white, c.black, 0.55),
-  gray6 = util.blend(c.white, c.black, 0.66),
-  gray7 = util.blend(c.white, c.black, 0.77),
-  gray8 = util.blend(c.white, c.black, 0.88),
-}
+-- Syntax --
+color['comment'] = color.gray5
+
+-- Plugin --
+color['telescope_prompt'] = color.gray1
+
+return color
