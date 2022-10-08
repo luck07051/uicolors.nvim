@@ -15,15 +15,31 @@ color['gray7'] = util.blend(color.fg, color.bg, 0.7)
 color['gray8'] = util.blend(color.fg, color.bg, 0.8)
 color['gray9'] = util.blend(color.fg, color.bg, 0.9)
 
+
 -- UI --
 color['cursor_line'] = color.gray1
 color['nontext'] = color.gray4
 color['float_bg'] = color.gray0
 
+
 -- Syntax --
 color['comment'] = color.gray5
 
+color['keyword'] = color.magenta
+color['preproc'] = color.red
+color['punctuation'] = color.gray6
+
+color['func'] = color.white
+color['variable'] = color.white
+color['constant'] = color.white
+color['type'] = color.blue
+
+color['value'] = color.yellow
+
+color['uri'] = color.cyan
+
 -- Plugin --
 color['telescope_prompt'] = color.gray1
+
 
 return color
