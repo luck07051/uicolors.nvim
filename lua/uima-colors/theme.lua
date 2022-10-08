@@ -5,9 +5,10 @@ local op_bg = true
 local background = op_bg and 'NONE' or c.bg
 
 return {
-  ------------------------------
-  -- UI (:h highlight-groups) --
-  ------------------------------
+  --------------------------
+  --          UI          --
+  --------------------------
+  -- (:h highlight-groups)
 
   Normal             = { fg = c.fg,                bg = background },
   NormalNC           = { link = 'Normal' },
@@ -90,9 +91,9 @@ return {
 
 
 
-  --------------------
-  --     Syntax     --
-  --------------------
+  --------------------------
+  --        Syntax        --
+  --------------------------
 
   ['@comment']               = { fg = c.comment },
 
@@ -118,9 +119,9 @@ return {
   ['@punctuation.bracket']   = { link = '@punctuation' },
   ['@punctuation.special']   = { link = '@punctuation' },
 
-  ['@constructor']           = { link = '@punctuation' },
+  ['@constructor']           = { },
 
-  ['@symbol']                = { },
+  -- ['@symbol']                = { },
 
   -- ['@annotation']            = { },
   -- ['@attribute']             = { },
@@ -198,6 +199,56 @@ return {
 
   -- Other --
   ['@constant.comment']      = { link = '@comment' },
+
+
+
+  ------------------------------
+  --  Original Syntax Groups  --
+  ------------------------------
+
+  Comment        = { link = '@comment' },
+
+  Constant       = { link = '@constant' },
+    String         = { link = '@string' },
+    Character      = { link = '@character' },
+    Number         = { link = '@number' },
+    Boolean        = { link = '@boolean' },
+    Float          = { link = '@float' },
+
+  Identifier     = { link = '@variable' },
+    Function       = { link = '@function' },
+
+  Statement      = { link = '@conditional' },
+    Conditional    = { link = '@conditional' },
+    Repeat         = { link = '@reqeat' },
+    Label          = { link = '@label' },
+    Operator       = { link = '@operator' },
+    Keyword        = { link = '@keyword' },
+    Exception      = { link = '@exception' },
+
+  PreProc        = { link = '@preproc' },
+    Include        = { link = '@include' },
+    Define         = { link = '@define' },
+    Macro          = { link = '@constant.macro' },
+    PreCondit      = { link = '@preproc' },
+
+  Type           = { link = '@link' },
+    StorageClass   = { link = '@storageclass' },
+    Structure      = { link = '@' },
+    Typedef        = { link = '@type.definition' },
+
+  Special        = { link = '@character.special' },
+    SpecialChar    = { link = '@character.special' },
+    Tag            = { link = '@tag' },
+    Delimiter      = { link = '@punctuation.delimiter' },
+    SpecialComment = { link = '@comment' },
+    Debug          = { link = '@debug' },
+
+  Underlined     = { link = '@text.underline' },
+  Ignore         = { link = '@none' },
+  Error          = { link = '@error' },
+  Todo           = { link = '@todo' },
+
 
 
   --------------------
