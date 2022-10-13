@@ -1,14 +1,13 @@
 local util = require 'uima-colors.util'
 local c = require 'uima-colors.colors'
 
-local op_bg = true
+local op_bg = false
 local background = op_bg and 'NONE' or c.bg
 
 return {
   --------------------------
   --          UI          --
   --------------------------
-  -- (:h highlight-groups)
 
   Normal             = { fg = c.fg,                bg = background },
   NormalNC           = { link = 'Normal' },
@@ -37,8 +36,8 @@ return {
   ErrorMsg           = { fg = c.red,               bold = true },
   MoreMsg            = { fg = c.green },
   Question           = { fg = c.green,             bold = true },
-  QuickFixLine       = { fg = c.magenta,           bold = true }, --todo
-  MsgSeparator       = { fg = c.nontext,           strikethrough = true }, --todo  :display
+  QuickFixLine       = { fg = c.magenta,           bold = true },
+  MsgSeparator       = { fg = c.nontext,           strikethrough = true },
   WinSeparator       = { fg = c.nontext },
 
   StatusLine         = { bg = c.gray4 },
@@ -84,7 +83,7 @@ return {
   Whitespace         = { link = 'NonText' },
   ColorColumn        = { bg = c.nontext },
   MatchParen         = { fg = c.fg },
-  Folded             = { fg = c.gray7,             bold = true }, --todo
+  Folded             = { fg = c.gray7,             bg = c.gray0,    bold = true },
   Title              = { fg = c.magenta,           bold = true },
   Directory          = { fg = c.cyan }, --todo
   Conceal            = { }, --todo
@@ -180,7 +179,7 @@ return {
   ['@text.strike']           = { strikethrough = true },
   ['@text.title']            = { link = 'Title' },
   -- ['@text.literal']          = { },
-  ['@text.uri']              = { fg = c.uri,          undercurl = true },
+  ['@text.uri']              = { fg = c.uri,          bold = true },
   -- ['@text.math']             = { },
   -- ['@text.reference']        = { },
   ['@text.environment']      = { link = '@keyword' },
@@ -206,19 +205,19 @@ return {
   --  Original Syntax Groups  --
   ------------------------------
 
-  Comment        = { link = '@comment' },
+  Comment          = { link = '@comment' },
 
-  Constant       = { link = '@constant' },
+  Constant         = { link = '@constant' },
     String         = { link = '@string' },
     Character      = { link = '@character' },
     Number         = { link = '@number' },
     Boolean        = { link = '@boolean' },
     Float          = { link = '@float' },
 
-  Identifier     = { link = '@variable' },
+  Identifier       = { link = '@variable' },
     Function       = { link = '@function' },
 
-  Statement      = { link = '@conditional' },
+  Statement        = { link = '@conditional' },
     Conditional    = { link = '@conditional' },
     Repeat         = { link = '@reqeat' },
     Label          = { link = '@label' },
@@ -226,28 +225,28 @@ return {
     Keyword        = { link = '@keyword' },
     Exception      = { link = '@exception' },
 
-  PreProc        = { link = '@preproc' },
+  PreProc          = { link = '@preproc' },
     Include        = { link = '@include' },
     Define         = { link = '@define' },
     Macro          = { link = '@constant.macro' },
     PreCondit      = { link = '@preproc' },
 
-  Type           = { link = '@link' },
+  Type             = { link = '@link' },
     StorageClass   = { link = '@storageclass' },
     Structure      = { link = '@' },
     Typedef        = { link = '@type.definition' },
 
-  Special        = { link = '@character.special' },
+  Special          = { link = '@character.special' },
     SpecialChar    = { link = '@character.special' },
     Tag            = { link = '@tag' },
     Delimiter      = { link = '@punctuation.delimiter' },
     SpecialComment = { link = '@comment' },
     Debug          = { link = '@debug' },
 
-  Underlined     = { link = '@text.underline' },
-  Ignore         = { link = '@none' },
-  Error          = { link = '@error' },
-  Todo           = { link = '@todo' },
+  Underlined       = { link = '@text.underline' },
+  Ignore           = { link = '@none' },
+  Error            = { link = '@error' },
+  Todo             = { link = '@todo' },
 
 
 
@@ -276,5 +275,24 @@ return {
   CmpItemAbbrMatch = { fg = c.blue },
   CmpItemKind      = { fg = c.cyan },
   CmpItemMenu      = { fg = c.g4 },
+
+  -- Dashboard
+  DashboardHeader   = { fg = c.blue },
+  DashboardCenter   = { fg = c.green },
+  DashboardShortCut = { fg = c.red },
+  DashboardFooter   = {},
+
+  -- Neorg
+  -- ['@neorg.links.description'] = { underline = true},
+
+  ['@neorg.headings.1.prefix'] = { fg = c.magenta, bold = true},
+  ['@neorg.headings.1.title']  = { fg = c.magenta, bold = true},
+
+  ['@neorg.tags.ranged_verbatim.end']             = { fg = c.neorg_tags_ranver_name },
+  ['@neorg.tags.ranged_verbatim.begin']           = { fg = c.neorg_tags_ranver_name },
+  ['@neorg.tags.ranged_verbatim.name']            = { fg = c.neorg_tags_ranver_name },
+  ['@neorg.tags.ranged_verbatim.name.word']       = { fg = c.neorg_tags_ranver_name },
+  ['@neorg.tags.ranged_verbatim.name.delimiter']  = { fg = c.neorg_tags_ranver_deli },
+  ['@neorg.tags.ranged_verbatim.parameters.word'] = { fg = c.neorg_tags_ranver_para },
 
 }

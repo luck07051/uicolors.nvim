@@ -36,10 +36,14 @@ color['type'] = color.blue
 
 color['value'] = color.yellow
 
-color['uri'] = color.cyan
+color['uri'] = color.fg
 
 -- Plugin --
 color['telescope_prompt'] = color.gray1
+
+color['neorg_tags_ranver_name'] = util.blend(color.magenta,     color.bg, 0.4)
+color['neorg_tags_ranver_deli'] = util.blend(color.punctuation, color.bg, 0.4)
+color['neorg_tags_ranver_para'] = util.blend(color.blue,        color.bg, 0.4)
 
 
 return color
