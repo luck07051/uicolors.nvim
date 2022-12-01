@@ -1,10 +1,10 @@
 return {
-  black   = '#121212',
-  red     = '#E67E80',
-  green   = '#87AF87',
-  yellow  = '#EBCB8B',
-  blue    = '#81A1C1',
-  magenta = '#ECB2CF',
-  cyan    = '#87AFAF',
-  white   = '#D0D0D0',
+  black   = '#161616',
+  red     = '#c68586',
+  green   = '#86a586',
+  yellow  = '#d5be95',
+  blue    = '#83a0af',
+  magenta = '#d8afad',
+  cyan    = '#8caeaf',
+  white   = '#bcbcbc',
 }

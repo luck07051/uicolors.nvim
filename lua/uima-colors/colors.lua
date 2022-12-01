@@ -25,18 +25,24 @@ color['float_bg'] = color.gray0
 -- Syntax --
 color['comment'] = color.gray5
 
-color['keyword'] = color.magenta
 color['preproc'] = color.red
+color['keyword'] = color.magenta
+color['func'] = color.blue
+color['type'] = color.cyan
+color['field'] = color.white
+color['namespace'] = color.gray8
 color['punctuation'] = color.gray6
 
-color['func'] = color.white
 color['variable'] = color.white
 color['constant'] = color.white
-color['type'] = color.blue
-
+color['string'] = color.yellow
 color['value'] = color.yellow
 
 color['uri'] = color.fg
+
+color['diff_add'] = util.blend('#00ff00',  color.bg, 0.15)
+color['diff_delete'] = util.blend('#ff0000',  color.bg, 0.15)
+
 
 -- Plugin --
 color['telescope_prompt'] = color.gray1
