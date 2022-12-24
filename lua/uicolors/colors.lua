@@ -1,5 +1,5 @@
-local util = require 'uima-colors.util'
-local color = require 'uima-colors.color'
+local util = require 'uicolors.util'
+local color = require 'uicolors.color'
 
 color['bg'] = color.black
 color['fg'] = color.white
@@ -38,7 +38,7 @@ color['constant'] = color.white
 color['string'] = color.yellow
 color['value'] = color.yellow
 
-color['uri'] = color.fg
+color['uri'] = color.cyan
 
 color['diff_add'] = util.blend('#00ff00',  color.bg, 0.15)
 color['diff_delete'] = util.blend('#ff0000',  color.bg, 0.15)

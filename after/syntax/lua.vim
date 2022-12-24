@@ -1,3 +1,3 @@
-if g:colors_name != 'uima_colors'
+if g:colors_name != 'uicolors'
   finish
 endif

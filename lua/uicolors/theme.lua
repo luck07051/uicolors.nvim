@@ -1,7 +1,7 @@
-local util = require 'uima-colors.util'
-local c = require 'uima-colors.colors'
+local util = require 'uicolors.util'
+local c = require 'uicolors.colors'
 
-local op_bg = false
+local op_bg = true
 local background = op_bg and 'NONE' or c.bg
 
 return {
@@ -80,7 +80,7 @@ return {
   NonText            = { fg = c.nontext },
   EndOfBuffer        = { link = 'NonText' },
   SpecialKey         = { link = 'NonText' },
-  Whitespace         = { link = 'NonText' },
+  Whitespace         = { fg = c.gray3 },
   ColorColumn        = { bg = c.nontext },
   MatchParen         = { fg = c.fg },
   Folded             = { fg = c.gray7,             bg = c.gray0,    bold = true },
@@ -162,7 +162,7 @@ return {
   ['@type.definition']       = { link = '@preproc' },
   ['@type.qualifier']        = { link = '@type' },
 
-  ['@storageclass']          = { },
+  ['@storageclass']          = { fg = c.cyan },
   ['@attribute']             = { fg = c.cyan },
   ['@field']                 = { fg = c.field },
   ['@property']              = { link = '@field' },
@@ -186,7 +186,7 @@ return {
   ['@text.strike']           = { strikethrough = true },
   ['@text.title']            = { link = 'Title' },
   ['@text.literal']          = { bg = c.gray1 },
-  ['@text.uri']              = { fg = c.uri,          bold = true },
+  ['@text.uri']              = { fg = c.uri,          underline = true },
   -- ['@text.math']             = { },
   ['@text.environment']      = { link = '@keyword' },
   ['@text.environment.name'] = { fg = c.blue,         bold = true },

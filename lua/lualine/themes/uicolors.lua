@@ -1,6 +1,6 @@
 -- stylua: ignore
-local util = require 'uima-colors.util'
-local colors = require 'uima-colors.color'
+local util = require 'uicolors.util'
+local colors = require 'uicolors.color'
 colors['gray'] = util.blend(colors.fg, colors.bg, 0.3)
 colors['none'] = 'NONE'
 
