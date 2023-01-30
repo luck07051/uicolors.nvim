@@ -293,6 +293,9 @@ return {
 
   TelescopeSelection    = { bg = c.cursor_line },
 
+  -- Fzf-Lua
+  FzfLuatitle   = { fg = c.white,   bg = c.float_bg },
+
   -- Cmp
   CmpItemAbbrMatch = { fg = c.blue },
   CmpItemKind      = { fg = c.cyan },
@@ -300,9 +303,18 @@ return {
 
   -- Dashboard
   DashboardHeader   = { fg = c.blue },
-  DashboardCenter   = { fg = c.green },
-  DashboardShortCut = { fg = c.red },
   DashboardFooter   = {},
+  ---- General
+  DashboardProjectTitle     = { fg = c.green },
+  DashboardProjectTitleIcon = { fg = c.green },
+  DashboardProjectIcon      = { fg = c.green },
+  DashboardMruTitle         = { fg = c.green },
+  DashboardMruIcon          = { fg = c.green },
+  DashboardFiles            = { fg = c.gray8 },
+  -- for doom theme
+  DashboardIcon     = { fg = c.green },
+  DashboardDesc     = { fg = c.green },
+  DashboardKey      = { fg = c.red },
 
   -- Neorg
   -- ['@neorg.links.description'] = { underline = true},
