@@ -329,4 +329,9 @@ return {
   ['@neorg.tags.ranged_verbatim.name.delimiter']  = { fg = c.neorg_tags_ranver_deli },
   ['@neorg.tags.ranged_verbatim.parameters.word'] = { fg = c.neorg_tags_ranver_para },
 
+  -- Headline
+  Headline           = { bg = util.blend(c.green, c.bg, 0.2) },
+  CodeBlock          = { bg = c.gray0 },
+  Dash               = { fg = c.cyan,             bold = true },
+
 }
