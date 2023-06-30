@@ -334,4 +334,7 @@ return {
   CodeBlock          = { bg = c.gray0 },
   Dash               = { fg = c.cyan,             bold = true },
 
+  -- Flash
+  FlashLabel         = { bg = c.yellow, fg = c.black, bold = true },
+
 }
