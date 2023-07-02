@@ -190,7 +190,7 @@ return {
   -- ['@text.math']             = { },
   ['@text.environment']      = { link = '@keyword' },
   ['@text.environment.name'] = { fg = c.blue,         bold = true },
-  -- ['@text.reference']        = { },
+  ['@text.reference']        = { fg = util.blend(c.cyan, c.fg, 0.6) },
 
   ['@text.todo']                  = { },
   -- ['@text.note']             = { },
