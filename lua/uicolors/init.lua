@@ -4,7 +4,7 @@ M.load = function()
 
   -- Reset colors
   if vim.g.colors_name then
-    vim.com('hi clear')
+    vim.cmd('hi clear')
   end
 
   vim.g.colors_name = 'uicolors'
