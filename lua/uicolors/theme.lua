@@ -276,6 +276,9 @@ return {
   --     Plugin     --
   --------------------
 
+  -- Yank highlighting
+  Yank               = { bg = c.green,    fg = c.black },
+
   DiagnosticError = { fg = c.red },
   DiagnosticWarn  = { fg = c.yellow },
   DiagnosticInfo  = { fg = c.cyan },
