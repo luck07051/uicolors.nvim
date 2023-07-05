@@ -340,4 +340,13 @@ return {
   -- Flash
   FlashLabel         = { bg = c.yellow, fg = c.black, bold = true },
 
+  LeapMatch          = { fg = c.magenta },
+  LeapLabelPrimary   = { bg = c.magenta,  fg = c.black },
+  LeapLabelSecondary = { bg = c.blue,     fg = c.black },
+  -- LeapLabelSelected  = { },
+  -- LeapBackdrop       = { },
+
+  EyelinerPrimary    = { underline = true,  bold = true },
+  EyelinerSecondary  = { underline = true },
+
 }
