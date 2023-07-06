@@ -351,4 +351,8 @@ return {
   -- EyelinerPrimary    = { underline = true,  bold = true },
   -- EyelinerSecondary  = { underline = true },
 
+  IlluminatedWordText  = { bg = c.gray1 },
+  IlluminatedWordRead  = { link = 'IlluminatedWordText' },
+  IlluminatedWordWrite = { link = 'IlluminatedWordText' },
+
 }
