@@ -346,7 +346,9 @@ return {
   -- LeapLabelSelected  = { },
   -- LeapBackdrop       = { },
 
-  EyelinerPrimary    = { underline = true,  bold = true },
+  EyelinerPrimary    = { bold = true },
   EyelinerSecondary  = { underline = true },
+  -- EyelinerPrimary    = { underline = true,  bold = true },
+  -- EyelinerSecondary  = { underline = true },
 
 }
