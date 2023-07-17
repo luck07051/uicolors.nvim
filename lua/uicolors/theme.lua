@@ -82,7 +82,7 @@ return {
   SpecialKey         = { link = 'NonText' },
   Whitespace         = { fg = c.gray3 },
   ColorColumn        = { bg = c.nontext },
-  MatchParen         = { fg = c.fg },
+  MatchParen         = { fg = c.green,             bold = true },
   Folded             = { fg = c.gray7,             bg = c.gray0,    bold = true },
   Title              = { fg = c.magenta,           bold = true },
   Directory          = { fg = c.cyan }, --todo
