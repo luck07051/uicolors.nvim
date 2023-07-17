@@ -299,6 +299,9 @@ return {
   -- Treesitter Context
   TreesitterContext = { bg = c.gray1 },
 
+  -- Ufo fold
+  UfoCursorFoldedLine = { bg = c.cursor_line, bold = true },
+
   -- Fzf-Lua
   FzfLuatitle   = { fg = c.white,   bg = c.float_bg },
 
