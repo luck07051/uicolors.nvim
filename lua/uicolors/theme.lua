@@ -296,6 +296,9 @@ return {
 
   TelescopeSelection    = { bg = c.cursor_line },
 
+  -- Treesitter Context
+  TreesitterContext = { bg = c.gray1 },
+
   -- Fzf-Lua
   FzfLuatitle   = { fg = c.white,   bg = c.float_bg },
 
