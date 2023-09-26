@@ -192,10 +192,10 @@ return {
   ['@text.environment.name'] = { fg = c.blue,         bold = true },
   ['@text.reference']        = { fg = util.blend(c.cyan, c.fg, 0.6) },
 
-  ['@text.todo']                  = { },
-  -- ['@text.note']             = { },
-  -- ['@text.warning']          = { },
-  -- ['@text.danger']           = { },
+  ['@text.todo']             = { fg = c.black, bg = c.cyan, bold = true },
+  ['@text.note']             = { link = '@text.todo' },
+  ['@text.warning']          = { link = '@text.todo' },
+  ['@text.danger']           = { link = '@text.todo' },
 
   ['@text.diff.add']         = { bg = c.diff_add },
   ['@text.diff.delete']      = { bg = c.diff_delete },
