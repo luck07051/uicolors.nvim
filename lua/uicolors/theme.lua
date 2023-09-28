@@ -40,8 +40,8 @@ return {
   MsgSeparator       = { fg = c.nontext,           strikethrough = true },
   WinSeparator       = { fg = c.nontext },
 
-  StatusLine         = { bg = c.gray4 },
-  StatusLineNC       = { fg = c.gray5 },
+  StatusLine         = { fg = c.gray8, bg = c.gray0, bold = true },
+  StatusLineNC       = { fg = c.gray0 },
 
   TabLine            = { fg = c.gray5,             bold = true },
   TabLineSel         = { bold = true },
@@ -287,8 +287,8 @@ return {
   -- Telescope
   TelescopeNormal       = { link = 'NormalFloat' },
   TelescopeBorder       = { link = 'FloatBorder' },
-  TelescopePromptNormal = { bg = c.telescope_prompt },
-  TelescopePromptBorder = { fg = c.telescope_prompt, bg = c.telescope_prompt },
+  TelescopePromptNormal = { bg = c.prompt },
+  TelescopePromptBorder = { fg = c.prompt, bg = c.prompt },
 
   TelescopeTitle        = { },
   TelescopePreviewTitle = { fg = c.red,     bold = true, reverse = true },
