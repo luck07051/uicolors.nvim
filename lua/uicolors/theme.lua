@@ -302,6 +302,9 @@ return {
   -- Ufo fold
   UfoCursorFoldedLine = { bg = c.cursor_line, bold = true },
 
+  -- Indent blankline
+  IblIndent = { fg = c.gray1 },
+
   -- Fzf-Lua
   FzfLuatitle   = { fg = c.white,   bg = c.float_bg },
 
