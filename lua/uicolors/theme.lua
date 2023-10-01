@@ -65,7 +65,7 @@ return {
   Search             = { fg = c.black,             bg = c.yellow },
   IncSearch          = { link = 'Search' },
   Substitute         = { link = 'Search' },
-  CurSearch          = { },
+  CurSearch          = { link = 'Search' },
 
   SpellBad           = { fg = c.red,               underline = true },
   SpellCap           = { fg = c.yellow,            underline = true },
