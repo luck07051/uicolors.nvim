@@ -364,4 +364,45 @@ return {
   IlluminatedWordRead  = { link = 'IlluminatedWordText' },
   IlluminatedWordWrite = { link = 'IlluminatedWordText' },
 
+  -- dapui
+
+  -- DapUINormal                          = { link = 'Normal' },
+  -- DapUIVariable                        = { link = 'Normal' },
+  -- DapUIEndofBuffer                     = { link = 'EndofBuffer' },
+
+  DapUIScope                           = { fg = c.magenta, bold = true },
+
+  DapUIType                            = { fg = c.cyan },
+  DapUIValue                           = { link = 'Normal' },
+  DapUIModifiedValue                   = { fg = c.cyan, bold = true },
+  DapUIDecoration                      = { fg = c.cyan },
+  DapUIThread                          = { fg = c.green },
+  DapUIStoppedThread                   = { fg = c.magenta },
+  DapUIFrameName                       = { link = 'Normal' },
+  DapUISource                          = { fg = c.cyan },
+  DapUILineNumber                      = { fg = c.cyan },
+  DapUIFloatNormal                     = { link = 'NormalFloat' },
+  DapUIFloatBorder                     = { link = 'FloatBorder' },
+  DapUICurrentFrameName                = { link = 'DapUIBreakpointsCurrentLine' },
+
+  DapUIWatchesEmpty                    = { fg = c.red },
+  DapUIWatchesValue                    = { fg = c.green },
+  DapUIWatchesError                    = { fg = c.red },
+
+  DapUIBreakpointsPath                 = { fg = c.magenta, bold = true },
+  DapUIBreakpointsInfo                 = { fg = c.green },
+  DapUIBreakpointsCurrentLine          = { fg = c.green, bold = true },
+  DapUIBreakpointsLine                 = { link = 'DapUILineNumber' },
+  DapUIBreakpointsDisabledLine         = { fg = '#424242' },
+
+  DapUIStepOver                        = { fg = c.cyan },
+  DapUIStepInto                        = { fg = c.cyan },
+  DapUIStepBack                        = { fg = c.cyan },
+  DapUIStepOut                         = { fg = c.cyan },
+  DapUIStop                            = { fg = c.red },
+  DapUIPlayPause                       = { fg = c.green },
+  DapUIRestart                         = { fg = c.green },
+  DapUIUnavailable                     = { fg = c.gray3 },
+  DapUIWinSelect                       = { fg = c.cyan, bold = true },
+
 }
